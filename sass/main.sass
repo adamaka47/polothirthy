@@ -1,0 +1,342 @@
+*, *::after, *::before
+	box-sizing: border-box
+
+
+body
+	font-family: 'Open Sans', sans-serif;
+
+img
+	max-width: 100%
+	display: block
+	height: auto
+
+.container
+	max-width: 940px
+
+.header
+	.container
+	&_top
+		padding-top: 35px
+		padding-bottom: 20px
+	&_nav
+		ul
+			list-style-type: none
+			margin: 0
+			padding: 0
+			display: flex
+			justify-content: flex-end
+			flex-wrap: wrap
+			li
+				border-left: 1px dashed #c6c6c6
+				padding-left: 15px
+				padding-right: 15px
+				a
+					text-transform: uppercase
+					color: #767
+					font-weight: 800
+					text-decoration: none
+					margin-bottom: 2px
+					font-size: 14px
+					transition: color 0.4s
+					display: block
+					line-height: 1
+					&:hover
+						color: purple
+				span
+					display: block
+					color: #999
+					font-size: 12px
+					color: #c6c6c6
+
+.background
+	height: 350px
+	background: linear-gradient(0deg, #323232 0%, #111 100%)
+
+.show
+	margin-top: -320px
+	padding-bottom: 35px
+	.slick-dotted.slick-slider
+		margin-bottom: 0
+	.slider
+		&_title
+			text-align: center
+			text-transform: uppercase
+			font-weight: 800
+			font-size: 24px
+			padding-bottom: 20px
+			border-bottom: 1px solid #c6c6c6
+		&_img
+			height: 350px
+			width: 100%
+			border: 1px solid #fff
+			border-radius: 10px
+			box-shadow: 0px 4px 4px #222
+			margin-bottom: 20px
+			&_1
+				background: url('../img/slider_img.jpg') center no-repeat
+				background-size: cover
+			&_2
+				background: url('../img/slider_img2.jpg') center no-repeat
+				background-size: cover
+		.slick-slide
+			outline: none
+		.slick-dots
+			bottom: 90px
+			text-align: left
+			left: 20px
+			li.slick-active button::before
+				opacity: 1
+				background: radial-gradient(#fff, #0a7ea1)
+			li button::before
+				font-size: 0px
+				width: 15px
+				height: 15px
+				background: linear-gradient(0deg, #999 0%, #fff 100%)
+				border-radius: 50%
+				opacity: 1
+				border: 3px solid #111
+
+.news
+	display: none
+	padding-bottom: 35px
+	border-bottom: 1px solid #c6c6c6
+	&_title
+		font-size: 24px
+		color: #11719e
+		letter-spacing: 1px
+		margin: 0
+	&_subtitle
+		color: #8c8c8c
+		margin-top: 5px
+		margin-bottom: 15px
+		font-size: 14px
+	&_img
+		width: 100%
+		height: 190px
+		border-radius: 5px
+		border: 5px solid #f2f2f2
+		margin-bottom: 15px
+		&_1
+			background: url('../img/news_1.jpg') center no-repeat
+			background-size: cover
+		&_2
+			background: url('../img/news_2.jpg') center no-repeat
+			background-size: cover
+	&_text
+		font-size: 14px
+		line-height: 1.8
+		color: #222
+		letter-spacing: 1px
+		margin-bottom: 0
+		font-family: sans-serif
+		font-weight: 400
+		margin-bottom: 20px
+	&_link
+		color: #11719e
+		text-decoration: none
+		width: 190px
+		border-radius: 4px
+		border: 1px solid #c6c6c6
+		padding: 5px 10px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		background: linear-gradient(90deg, #e8e8e8 0%, #fff 20%, #e8e8e8 40%, #e8e8e8 100%)
+		img
+			transition: transform 0.4s
+		&:hover
+			text-decoration: none
+			color: #8af
+			img
+				transform: rotate(-180deg)
+
+
+.info
+	padding-top: 35px
+	padding-bottom: 20px
+	img[alt="Social"]
+		width: 85%
+		max-height: 55px
+	&_title
+		font-size: 20px
+		color: #333
+		letter-spacing: 1px
+		padding-bottom: 8px
+		border-bottom: 1px dashed #c6c6c6
+		margin-bottom: 12px
+	&_text
+		color: #333
+		font-size: 14px
+		letter-spacing: 0.6px
+		margin-bottom: 10px
+	&_connection
+		margin-bottom: 40px
+	&_name
+		font-size: 20px
+		font-weight: 800
+		letter-spacing: 1px
+		padding-bottom: 8px
+		border-bottom: 1px dashed #c6c6c6
+		margin-bottom: 12px
+	&_about
+		@extend .info_text
+		margin-bottom: 15px
+	&_newsletter
+		margin-bottom: 12px
+	&_write
+		margin-bottom: 20px
+	&_item
+		padding-bottom: 10px
+		margin-bottom: 15px
+		border-bottom: 1px dashed #c6c6c6
+		img
+			border: 4px solid #c6c6c6
+			border-radius: 5px
+	&_update
+		&_text
+			margin: 0
+			margin-left: 7px
+			line-height: 1
+			font-size: 14px
+			letter-spacing: 1px
+			color: #777
+			line-height: 1.4
+	input
+		width: 100%
+		display: block
+		outline: none
+		padding: 15px 12px
+		border-radius: 4px
+		background-color: transparent
+		font-size: 14px
+		border: 1px solid #6c6c6c
+		&::placeholder
+			letter-spacing: 1px
+	textarea
+		width: 100%
+		min-height: 140px
+		padding: 12px
+		font-size: 14px
+		outline: none
+		display: block
+		resize: none
+		border-radius: 4px
+		border: 1px solid #6c6c6c
+		&::placeholder
+			letter-spacing: 1px
+	button
+		width: 160px
+		margin-top: 12px
+		outline: none
+		text-align: left
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 12px
+		background: linear-gradient(90deg, #5188c1 0%, #01719e 100%)
+		border: 1px solid #01719e
+		cursor: pointer
+		color: #fff
+		font-size: 14px
+		border-radius: 4px
+		img
+			transition: transform 0.4s
+		&:hover
+			img
+				transform: rotate(180deg)
+
+.footer
+	padding-top: 20px
+	padding-bottom: 100px
+	background-color: #333
+	color: #8b8b8b
+	border-top: 10px solid #4c4c4c
+	font-size: 14px
+	letter-spacing: 0.4px
+	&_design
+		margin: 0
+		span
+			color: #fea100
+	&_copy
+		text-align: right
+		a
+			color: #8b8b8b
+			color: #af9
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		li
+			display: inline-block
+			&::after
+				content: '|'
+				margin-left: 5px
+			&:last-child::after
+				display: none
+			a
+				color: #af8
+
+
+@media (max-width: 991.98px)
+	.header
+		&_logo
+			img
+				margin: auto
+		&_nav
+			margin: 25px 0
+			ul
+				justify-content: space-between
+				li
+					margin-top: 20px
+	.show
+		.slider
+			.slick-dots
+				top: 20px
+				left: 10px
+			&_title
+				font-size: 18px
+				line-height: 2
+	.news
+		text-align: center
+		&_item
+			margin-bottom: 40px
+		&_img
+			max-width: 320px
+			margin: auto
+			margin-bottom: 20px
+		a
+			margin: auto
+	.info
+		text-align: center
+		img[alt="Social"]
+			width: 65px
+			margin: auto
+		&_newsletter
+			margin-bottom: 40px
+		button
+			margin: auto
+			margin-top: 20px
+			align-items: center
+		button
+		img.last
+			margin-top: 20px
+		&_contact
+			margin-bottom: 40px
+		&_updates
+			margin-bottom: 40px
+			img
+				margin: auto
+				margin-bottom: 20px
+
+	.footer
+		&_copy
+			margin-top: 40px
+			text-align: left
+
+
+@media (max-width: 480px)
+	.header
+		&_nav
+			ul
+				li
+					flex-basis: 100%

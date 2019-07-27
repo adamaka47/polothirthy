@@ -297,7 +297,8 @@ img {
     text-align: center; }
     .info img[alt="Social"] {
       width: 65px;
-      margin: auto; }
+      margin: auto;
+      margin-bottom: 20px; }
     .info_newsletter {
       margin-bottom: 40px; }
     .info button {
